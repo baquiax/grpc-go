@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package primes;
+
+option go_package="primes";
+
+message Request {
+    int32 input = 2;
+}
+
+message Result {
+    int32 factor = 1;
+}
+
+service PrimeDecomposition {
+    rpc Calculate(Request) returns (stream Result) {}
+}

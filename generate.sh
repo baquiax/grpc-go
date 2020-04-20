@@ -2,3 +2,4 @@
 
 protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
 protoc calculator/calculator.proto --go_out=plugins=grpc:.
+protoc primes/primes.proto --go_out=plugins=grpc:.
